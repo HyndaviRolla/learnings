@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Tennis Match</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form action="tennis" method="post">
+<input type="submit"  id="action" name="action" value="start">
+<input type="submit" id="action" name="action" value="saveMatch">
+<input type="submit"  id = "action" name="action" value="resumeMatch">
+<br>
+<input type="radio" id="player" name="player" value="Federer"> Federer
+<input type="radio" id ="player" name="player" value="Nadal"> Nadal
+<input type="submit" id="updateScore" name="updateScore" value="updateScore">
+</form>
+
+<div class="recordCard">
+<div class="score-container"
+<p><span class="label">Player1 Score:</span> <span th:text="${federerScore}"></span></p>
+<p><span class="label">Player2 Score:</span> <span th:text="${nadalScore}"></span></p>
+</div>
+<div class="game-container">
+<p><span class="label">Player1 Game:</span> <span th:text="${federerGame}"></span></p>
+<p><span class="label">Player2 Game:</span> <span th:text="${nadalGame}"></span></p>
+</div>
+<div class="set-container">
+<p><span class="label">Player1 Set:</span> <span th:text="${federerSet}"></span></p>
+<p><span class="label">Player2 Set:</span> <span th:text="${nadalSet}"></span></p>
+</div>
+<p th:if="${message}">
+        Match <span th:text="${message}"></span>
+</p>
+</div>
+</body>
+</html>
+
+
+ 
+ 
+ 

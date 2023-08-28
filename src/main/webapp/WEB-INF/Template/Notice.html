@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+         
+              <head>
+				  <title>Insert title here</title>
+                <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+              </head>
+ <body>
+               <form method="post" action="notice">
+				    
+					<label for="name">Enter Name:</label>
+					<input type="text" id="name" name="name" >
+					<label for="contact">Contact Number:</label>
+					<input type="text" id="contact" name="contact">
+					<label for="emailId">Email Id</label>
+					<input type="email" id="emailId" name="emailId">     
+					<input type="submit" name="action" value="register">				 
+				</form>	
+				<p><span th:text="${name}">This is gonna get replaced</span></p>
+                <p><span th:text="${contact}">This is gonna get replaced</span></p>
+                <p><span th:text="${emailId}">This is gonna get replaced</span></p>		
+</body>

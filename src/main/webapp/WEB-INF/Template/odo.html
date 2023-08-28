@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+            <html xmlns:th="http://www.thymeleaf.org">
+              <head>
+                <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+              </head>
+              <body>
+                <h1>Odometer</h1>
+                <form method="post" action="odo">
+                  <label for="input"> Give Reading</label>
+                  <input type="text" id="input" name="input">
+                     <input type="submit" name="action"value="next">
+                      <input type="submit" name="action"value="prev"> 
+                          <input type="submit" name="action"value="size">         
+                </form>             
+                 
+                <h2>Output:</h2>
+                <p><span th:text="${output}">This is gonna get replaced</span></p>
+                <p><span th:text="${outputprev}">This is gonna get replaced</span></p>
+                <p><span th:text="${sizeofReading}">This is gonna get replaced</span></p>
+              </body>
+            </html>
+ 

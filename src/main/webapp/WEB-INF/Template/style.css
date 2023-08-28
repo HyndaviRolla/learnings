@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+ 
+
+form {
+  margin-top: 20px;
+}
+
+ 
+
+input[type="submit"] {
+  background-color: lavender;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+ 
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.recordCard {
+    background-color: aliceblue;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+ 
+
+span {
+  font-weight: bold;
+}
+
+ 
+
+span.label {
+  font-weight: normal;
+  color: #666;
+}
+
+ 
+
+p:nth-child(n+3) {
+  margin-top: 20px;
+}
